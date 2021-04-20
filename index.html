@@ -1,23 +1,30 @@
 <!DOCTYPE html>
-<html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>TODO List</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
-    <link href="https://fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Todo App JavaScript | CodingNepal</title> -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 <body>
-    <h1><span class="title">Todo</span>List</h1>
-    <div class="inputDiv">
-    	   <input type="text" class="input" placeholder="What Do You Want to Do...">
-    	   <button class="add"><i class="fas fa-plus"></i></button>
+  <div class="wrapper">
+    <header>Todo App</header>
+    <div class="inputField">
+      <input type="text" placeholder="Add your new todo">
+      <button><i class="fas fa-plus"></i></button>
     </div>
-    <div class="container">
+    <ul class="todoList">
+      <!-- data are comes from local storage -->
+    </ul>
+    <div class="footer">
+      <span>You have <span class="pendingTasks"></span> pending tasks</span>
+      <button>Clear All</button>
     </div>
-    <script src='main.js'></script>
+  </div>
+
+  <script src="main.js"></script>
+
 </body>
 </html>
